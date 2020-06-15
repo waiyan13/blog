@@ -1,0 +1,18 @@
+version: "3.8"
+
+networks:
+    static-site:
+
+services:
+    pelican:
+        build:
+            context: ./pelican
+            args:
+                - VERSION=${PYTHON_VERSION}
+        networks:
+            - static-site
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./:/home/blog
+
