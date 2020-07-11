@@ -1,0 +1,25 @@
+{
+	"name": "devblog",
+	"version": "0.1.0",
+	"description": "blogging site",
+	"scripts": {
+		"dev": "webpack --mode development",
+		"watch": "webpack --mode development --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"blog",
+		"webpack"
+	],
+	"author": "Zaw W. Lwin",
+	"license": "MIT",
+	"devDependencies": {
+		"css-loader": "^3.6.0",
+		"mini-css-extract-plugin": "^0.9.0",
+		"sass": "^1.26.8",
+		"sass-loader": "^8.0.2",
+		"webpack": "^4.43.0",
+		"webpack-cli": "^3.3.11"
+	}
+}
+
