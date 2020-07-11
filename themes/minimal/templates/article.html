@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} - {{ SITENAME }}{% endblock title %}
+{% block content %}
+<article>
+	<header>
+		<a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalinks to {{ article.title|striptags }}" class="article-title link">{{ article.title }}</a>
+		<span class="article-date">
+			{% if article.modified %}
+			Modified on <abbr title="{{ article.modified.isoformat() }}">{{ article.modified.strftime('%b %d %Y') }}</abbr><br>
+			{% endif %}
+			Originally posted on <abbr title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr>
+		</span>
+	</header>
+	<div>
+		{{ article.content }}
+	</div>
+</article>
+{% endblock content %}
