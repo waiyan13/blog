@@ -131,3 +131,11 @@ dmypy.json
 # generated site
 output/
 
+# node_modules
+node_modules/
+
+# static files
+themes/minimal/static/
+
+# webpack config
+themes/minimal/webpack.config.js
