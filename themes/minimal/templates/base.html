@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+	<head>
+		{% block head %}
+		<meta charset="utf-8">
+		<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+		<meta name="author" content="Zaw W. Lwin">
+		<meta name="generator" content="Pelican">
+		<meta name="description" content="I am an aspiring data engineer based
+		in Yangon.">
+		<meta name="keywords" content="data analyst, data engineer, portfolio,
+		programmer, software engineer">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:url" content="{{ SITEURL }}">
+		<meta property="og:title" content="Zaw W. Lwin | Data Analyst">
+		<meta property="og:description" content="I am an aspiring data engineer
+		based in Yangon.">
+		<meta property="og:image"
+		content="{{ SITEURL }}/theme/images/fb-og.png">
+		<meta property="og:image:type" content="image/png">
+		<meta name="twitter:card" content="summary_large_imae">
+		<meta name="twitter:site" content="@ZawWLwin">
+		<meta name="twitter:creator" content="@ZawWLwin">
+		<link rel="canonical" href="{{ SITEURL }}">
+		<!-- Favicons -->
+		<link rel="icon" type="image/x-icon" href="{{ SITEURL }}/theme/images/favicon.ico">
+		<link rel="icon" type="image/png" size="16x16"
+		href="{{ SITEURL }}/theme/images/favicon-16x16.png">
+		<link rel="icon" type="image/png" size="32x32"
+		href="{{ SITEURL }}/theme/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" size="192x192"
+		href="{{ SITEURL }}/theme/images/android-chrome-192x192.png">
+		<link rel="apple-touch-icon" size="180x180"
+		href="{{ SITEURL }}/theme/images/iPhone-180x180.png">
+		<link rel="apple-touch-icon" size="152x152"
+		href="{{ SITEURL }}/theme/images/iPad-152x152.png">
+		<!-- Fonts & Stylesheets -->
+		<link
+		href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Rubik:wght@500&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{
+		SITEURL}}/theme/css/main.css">
+		{% endblock head %}
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="/"><img src="{{ SITEURL }}/theme/images/logo.svg" alt="home"></a></li>
+					<li><a href="#">Resume</a></li>
+					<li><a href="#">Archive</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		{% block content %}
+		{% endblock content %}
+		</main>
+	</body>
+</html>
