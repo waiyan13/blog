@@ -10,7 +10,7 @@ THEME = './themes/minimal'
 
 TIMEZONE = 'Asia/Yangon'
 
-DEFAULT_DATE_FORMAT = '%d %Y'
+DEFAULT_DATE_FORMAT = '%b %d %Y'
 DEFAULT_LANG = 'en'
 DEFAULT_DATE = 'fs'
 
