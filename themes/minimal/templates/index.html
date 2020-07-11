@@ -2,9 +2,8 @@
 {% block content %}
 	<ul>
 	{% for article in articles_page.object_list %}
-		<li>
-			<a href="{{ SITEURL}}/{{ article.url }}">{{ article.title
-			}}</a>
+		<li class="article-item">
+			<a href="{{ SITEURL}}/{{ article.url }}" class="article-title link-color">{{ article.title }}</a>
 			{{ article.summary }}
 		</li>
 	{% endfor %}
