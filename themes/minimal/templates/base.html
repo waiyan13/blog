@@ -44,18 +44,16 @@
 		{% endblock head %}
 	</head>
 	<body>
-		<header>
+		<header class="main-header">
 			<nav>
 				<ul>
 					<li><a href="/"><img src="{{ SITEURL }}/theme/images/logo.svg" alt="home"></a></li>
-					<li><a href="#" class="link-color">Resume</a></li>
-					<li><a href="#" class="link-color">Archive</a></li>
+					<li><a href="#" class="fn-default link-color">Resume</a></li>
+					<li><a href="#" class="fn-default link-color">Archive</a></li>
 				</ul>
 			</nav>
 		</header>
-		<main>
 		{% block content %}
 		{% endblock content %}
-		</main>
 	</body>
 </html>
